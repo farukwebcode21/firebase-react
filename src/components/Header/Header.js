@@ -1,12 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import useFirebase from '../../hooks/useFirebase'
+import useAuth from '../../hooks/useAuth';
+
 
 const Header = () => {
-    const {user, logout } = useFirebase();
+    const {user, logout } = useAuth();
     return (
         <div className="header">
             <Link to="/home">Home</Link>
+            <Link to="/shipping">Shipping</Link>
+             <Link to="/placeorder">Place Order</Link>
             <Link to="/register">Register</Link>
             <Link to="/login">Login</Link>
             <span>{ user.displayName } </span>
@@ -15,4 +18,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;

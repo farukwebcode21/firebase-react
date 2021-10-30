@@ -21,9 +21,8 @@ code {
   padding: 10px 16px;
 }
 .header a:hover {
-  background-color: green;
+  border-bottom: 1px solid green;
   padding: 10px 16px;
-  color: white;
 }
 span {
   color: green;
